@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>TECHNOVATION</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="hi.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+
+        <script>
+            (function($){
+
+                $.fn.shuffle = function() {
+                    return this.each(function(){
+                        var items = $(this).children().clone(true);
+                        return (items.length) ? $(this).html($.shuffle(items)) : this;
+                    });
+                }
+                
+                $.shuffle = function(arr) {
+                    for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
+                    return arr;
+                }
+                
+            })(jQuery);
+        </script>
+        
+        <script type="text/javascript">
+        $(function($){
+            $('button.item').click(function(){
+                $('ul').shuffle();
+                $('#topic_alloc').shuffle();
+            });
+            $('button.div').click(function(){
+                $('#container').shuffle();
+            });
+            $('table').css("width", "30%");
+        });
+        </script>
+</head>
+
+<body>
+    <div  style="display: flex;margin-top: -19px">
+        <img src="college name format.png" alt="" style="    height: 83px;
+        margin: 25px;
+        margin-bottom: 1px;
+        margin-top: 37px;" id="logo">
+        
+        <div id="title" style="
+        margin-left: 251px;
+    ">
+         
+        <center>
+        <h1 style="font-family: 'Ubuntu', sans-serif;   letter-spacing: 2px;color: #2b3d83">TECHNOVATION</h1>
+        <h3 style="font-family: 'Ubuntu', sans-serif;   color: #d8830d" >Front-End Website Development Competition </h3>
+    </center>
+    </div>
+
+    <img src="logo.png" alt="" style="
+    height: 106px;
+    /* margin: 73px; */
+    margin-bottom: 1px;
+    margin-top: 19px;
+    margin-left: 409px;
+    " id="logo">
+</div>
+   <hr>
+<div>
+<center>
+    
+        <table border="1" cellpadding="10" cellspacing="0" style="font-family: system-ui;background-color:#e8e8e8">
+		<tr>
+            <center>
+			<th>Team Name</th>
+			<th>Feature</th>
+			<th>Topic Name</th>
+        </center>
+
+		</tr>
+		<tr>
+            <td style="padding: 2px 44px;">
+                <center>
+					<p>Team 1</p>
+					<p>Team 2</p>
+					<p>Team 3</p>
+					<p>Team 4</p>
+					<p>Team 5</p>
+					<p>Team 6</p>
+					<p>Team 7</p>
+					<p>Team 8</p>
+					<p>Team 9</p>
+					<p>Team 10</p>
+					<p>Team 11</p>
+					<p>Team 12</p>
+                </center>
+			</td>
+			<td>
+                <center>
+				<div id="container">
+                    <p>Receipt Generation </p>
+                    <p>Search Bar </p>
+                    <p>Rate us </p>
+                    <p>Feedback </p>
+                    <p>Loading Animation </p>
+                    <p>Light and Dark mode </p>
+                    <p>Parallax </p>
+                    <p>Image map </p>
+                    <p>Slider </p>
+                    <p>Timeline </p>
+                    <p>Pop-up </p>
+                    <p>Add to Cart </p>
+                    
+				</div>
+            </center>
+			</td>
+			<td>
+                <center>
+				<div id="topic_alloc">
+                    <p>topic 1 </p>
+                    <p>topic 2 </p>
+                    <p>topic 3</p>
+                    <p>topic 4 </p>
+                    <p>topic 5 </p>
+                    <p>topic 6 </p>
+                    <p>topic 7 </p>
+                    <p>topic 8 </p>
+                    <p>topic 9 </p>
+                    <p>topic 10 </p>
+                    <p>topic 11 </p>
+                    <p>topic 12 </p>
+    
+                    
+				</div>
+            </center>
+			</td>
+		</table>
+
+        <br>
+      
+
+        <button class="item div">Go</button>
+		<br /><br/>
+	</div>
+</div>
+</center>
+</center>
+</body>
+</html>
